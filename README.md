@@ -11,3 +11,4 @@ terrasky blog用に作ったzkSforceのログインのサンプルです。
 
 - twitter: https://twitter.com/sessan60jp
 - facebook: https://www.facebook.com/sessan60jp 
+- blog: http://sessan.hatenablog.com/
