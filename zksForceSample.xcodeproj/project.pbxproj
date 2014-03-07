@@ -14,13 +14,14 @@
 		392BC99718C9855100E92B52 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 392BC99618C9855100E92B52 /* main.m */; };
 		392BC99B18C9855100E92B52 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 392BC99A18C9855100E92B52 /* AppDelegate.m */; };
 		392BC99E18C9855100E92B52 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 392BC99C18C9855100E92B52 /* Main.storyboard */; };
-		392BC9A118C9855100E92B52 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 392BC9A018C9855100E92B52 /* ViewController.m */; };
 		392BC9A318C9855100E92B52 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 392BC9A218C9855100E92B52 /* Images.xcassets */; };
 		392BC9AA18C9855100E92B52 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 392BC9A918C9855100E92B52 /* XCTest.framework */; };
 		392BC9AB18C9855100E92B52 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 392BC98A18C9855100E92B52 /* Foundation.framework */; };
 		392BC9AC18C9855100E92B52 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 392BC98E18C9855100E92B52 /* UIKit.framework */; };
 		392BC9B418C9855100E92B52 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 392BC9B218C9855100E92B52 /* InfoPlist.strings */; };
 		392BC9B618C9855100E92B52 /* zksForceSampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 392BC9B518C9855100E92B52 /* zksForceSampleTests.m */; };
+		392BC9C218C9878300E92B52 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 392BC9C018C9878300E92B52 /* LoginViewController.m */; };
+		392BC9C918C988A000E92B52 /* LoginSucceedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 392BC9C818C988A000E92B52 /* LoginSucceedViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,14 +46,16 @@
 		392BC99918C9855100E92B52 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		392BC99A18C9855100E92B52 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		392BC99D18C9855100E92B52 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		392BC99F18C9855100E92B52 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		392BC9A018C9855100E92B52 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		392BC9A218C9855100E92B52 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		392BC9A818C9855100E92B52 /* zksForceSampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = zksForceSampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		392BC9A918C9855100E92B52 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		392BC9B118C9855100E92B52 /* zksForceSampleTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "zksForceSampleTests-Info.plist"; sourceTree = "<group>"; };
 		392BC9B318C9855100E92B52 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		392BC9B518C9855100E92B52 /* zksForceSampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = zksForceSampleTests.m; sourceTree = "<group>"; };
+		392BC9BF18C9878300E92B52 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		392BC9C018C9878300E92B52 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		392BC9C718C988A000E92B52 /* LoginSucceedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginSucceedViewController.h; sourceTree = "<group>"; };
+		392BC9C818C988A000E92B52 /* LoginSucceedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginSucceedViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,11 +115,11 @@
 		392BC99018C9855100E92B52 /* zksForceSample */ = {
 			isa = PBXGroup;
 			children = (
+				392BC9C518C9884300E92B52 /* LoginView */,
+				392BC9C618C9886900E92B52 /* LoginSucceedView */,
 				392BC99918C9855100E92B52 /* AppDelegate.h */,
 				392BC99A18C9855100E92B52 /* AppDelegate.m */,
 				392BC99C18C9855100E92B52 /* Main.storyboard */,
-				392BC99F18C9855100E92B52 /* ViewController.h */,
-				392BC9A018C9855100E92B52 /* ViewController.m */,
 				392BC9A218C9855100E92B52 /* Images.xcassets */,
 				392BC99118C9855100E92B52 /* Supporting Files */,
 			);
@@ -150,6 +153,24 @@
 				392BC9B218C9855100E92B52 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		392BC9C518C9884300E92B52 /* LoginView */ = {
+			isa = PBXGroup;
+			children = (
+				392BC9BF18C9878300E92B52 /* LoginViewController.h */,
+				392BC9C018C9878300E92B52 /* LoginViewController.m */,
+			);
+			name = LoginView;
+			sourceTree = "<group>";
+		};
+		392BC9C618C9886900E92B52 /* LoginSucceedView */ = {
+			isa = PBXGroup;
+			children = (
+				392BC9C718C988A000E92B52 /* LoginSucceedViewController.h */,
+				392BC9C818C988A000E92B52 /* LoginSucceedViewController.m */,
+			);
+			name = LoginSucceedView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -249,9 +270,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				392BC9A118C9855100E92B52 /* ViewController.m in Sources */,
+				392BC9C218C9878300E92B52 /* LoginViewController.m in Sources */,
 				392BC99B18C9855100E92B52 /* AppDelegate.m in Sources */,
 				392BC99718C9855100E92B52 /* main.m in Sources */,
+				392BC9C918C988A000E92B52 /* LoginSucceedViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

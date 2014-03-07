@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  LoginSucceedViewController.h
 //  zksForceSample
 //
 //  Created by テラスカイ on 2014/03/07.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface LoginSucceedViewController : UIViewController
 
 @end
