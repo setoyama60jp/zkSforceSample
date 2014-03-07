@@ -1,0 +1,10 @@
+PODS:
+  - ZKSforce (29)
+
+DEPENDENCIES:
+  - ZKSforce (= 29)
+
+SPEC CHECKSUMS:
+  ZKSforce: a8a5c2a9a12a14534bd24b62f14f255547db462e
+
+COCOAPODS: 0.29.0
