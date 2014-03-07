@@ -35,4 +35,7 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)loginButtonPushed:(id)sender {
+    [self performSegueWithIdentifier:@"loginSucceed" sender:self];
+}
 @end

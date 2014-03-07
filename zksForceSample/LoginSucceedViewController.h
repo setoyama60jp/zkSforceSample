@@ -9,5 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface LoginSucceedViewController : UIViewController
+- (IBAction)logoutButtonPushed:(id)sender;
 
 @end

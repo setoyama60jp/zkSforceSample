@@ -35,4 +35,7 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)logoutButtonPushed:(id)sender {
+    [self performSegueWithIdentifier:@"logout" sender:self];
+}
 @end
