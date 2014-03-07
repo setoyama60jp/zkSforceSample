@@ -54,7 +54,7 @@
                                 <rect key="frame" x="107" y="108" width="193" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="srp-d3-i6F">
                                 <rect key="frame" x="106" y="172" width="194" height="30"/>
@@ -66,6 +66,9 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <connections>
+                        <outlet property="orgIdTxt" destination="srp-d3-i6F" id="VOy-nI-bpp"/>
+                        <outlet property="passwordTxt" destination="A4L-Wp-q37" id="UJd-Sp-3I7"/>
+                        <outlet property="userIdTxt" destination="Dwh-VZ-j62" id="QR8-Tf-e1P"/>
                         <segue destination="3Yc-v8-l46" kind="modal" identifier="loginSucceed" modalTransitionStyle="flipHorizontal" id="nym-jl-jBl"/>
                     </connections>
                 </viewController>
@@ -114,6 +117,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="w85-Bb-2MW"/>
                     <connections>
+                        <outlet property="sessionIdView" destination="Umb-J5-5Eb" id="mlp-Id-N3Y"/>
                         <segue destination="vXZ-lx-hvc" kind="modal" identifier="logout" modalTransitionStyle="flipHorizontal" id="dhw-IQ-ikp"/>
                     </connections>
                 </viewController>

@@ -7,9 +7,18 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ZksforceClient.h"
 
 @interface LoginViewController : UIViewController
+{
+    NSString * _sessionId;
+}
+@property (weak, nonatomic) IBOutlet UITextField *userIdTxt;
+@property (weak, nonatomic) IBOutlet UITextField *passwordTxt;
+@property (weak, nonatomic) IBOutlet UITextField *orgIdTxt;
 
 - (IBAction)loginButtonPushed:(id)sender;
+
++ (ZKSforceClient * ) sharedZksforceClient;
 
 @end

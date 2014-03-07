@@ -27,6 +27,7 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
+    self.sessionIdView.text = _sessionId;
 }
 
 - (void)didReceiveMemoryWarning
@@ -38,4 +39,9 @@
 - (IBAction)logoutButtonPushed:(id)sender {
     [self performSegueWithIdentifier:@"logout" sender:self];
 }
+
+- (void) setSessionId:(NSString *)sessionId {
+    _sessionId = sessionId;
+}
+
 @end

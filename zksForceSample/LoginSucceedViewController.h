@@ -8,7 +8,14 @@
 
 #import <UIKit/UIKit.h>
 
-@interface LoginSucceedViewController : UIViewController
+@interface LoginSucceedViewController : UIViewController{
+    NSString * _sessionId;
+}
+
+@property (weak, nonatomic) IBOutlet UITextView *sessionIdView;
+
 - (IBAction)logoutButtonPushed:(id)sender;
+
+- (void) setSessionId:(NSString *) sessionId;
 
 @end
