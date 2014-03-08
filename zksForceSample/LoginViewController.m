@@ -47,21 +47,34 @@ static ZKSforceClient* g_sforce=nil;
     ZKLoginResult * result = nil;
           
     //注：サンプル紹介のため、例外処理は実装していません。
-    
-    if ([self.orgIdTxt.text length] > 0) {
-        //組織IDを指定している時、ポータルへのログイン
-        result = [sforce portalLogin:self.userIdTxt.text password:self.passwordTxt.text orgId:self.orgIdTxt.text portalId:nil];
-    } else {
-        //組織IDを指定しなかった時、通常のログイン
-        result = [sforce login:self.userIdTxt.text password:self.passwordTxt.text];
+    @try {
+        if ([self.orgIdTxt.text length] > 0) {
+            //組織IDを指定している時、ポータルへのログイン
+            result = [sforce portalLogin:self.userIdTxt.text password:self.passwordTxt.text orgId:self.orgIdTxt.text portalId:nil];
+        } else {
+            //組織IDを指定しなかった時、通常のログイン
+            result = [sforce login:self.userIdTxt.text password:self.passwordTxt.text];
+            
+        }
         
+        if ([result sessionId] != nil) {
+            //sessionIDが返って来ている場合は、画面遷移
+            _sessionId = [result sessionId];
+            [self performSegueWithIdentifier:@"loginSucceed" sender:self];
+        }
+    }
+    @catch (NSException *exception) {
+        //とにかくアラート表示
+        //viewDidloadとかに
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"ログイン失敗"
+                                                        message:@"ログイン時にエラーが発生しました。"
+                                                       delegate:self
+                                              cancelButtonTitle:@"cancel"
+                                              otherButtonTitles:@"ok", nil];
+        [alert show];
     }
     
-    if ([result sessionId] != nil) {
-        //sessionIDが返って来ている場合は、画面遷移
-        _sessionId = [result sessionId];
-        [self performSegueWithIdentifier:@"loginSucceed" sender:self];
-    }
+
 }
 
 - (void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
