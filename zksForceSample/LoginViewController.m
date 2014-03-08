@@ -45,7 +45,7 @@ static ZKSforceClient* g_sforce=nil;
     ZKSforceClient *sforce = [LoginViewController sharedZksforceClient];
     
     ZKLoginResult * result = nil;
-          
+    
     @try {
         if ([self.orgIdTxt.text length] > 0) {
             //組織IDを指定している時、ポータルへのログイン
@@ -64,7 +64,6 @@ static ZKSforceClient* g_sforce=nil;
     }
     @catch (NSException *exception) {
         //とにかくアラート表示
-        //viewDidloadとかに
         UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"ログイン失敗"
                                                         message:@"ログイン時にエラーが発生しました。"
                                                        delegate:self
