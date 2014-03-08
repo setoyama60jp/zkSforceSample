@@ -46,7 +46,6 @@ static ZKSforceClient* g_sforce=nil;
     
     ZKLoginResult * result = nil;
           
-    //注：サンプル紹介のため、例外処理は実装していません。
     @try {
         if ([self.orgIdTxt.text length] > 0) {
             //組織IDを指定している時、ポータルへのログイン
