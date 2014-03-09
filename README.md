@@ -12,8 +12,11 @@ terrasky blog用に作ったzkSforceのログインのサンプルです。
     $ git clone git@github.com:setoyama60jp/zkSforceSample.git
     
  そして、zkSforceのインストール
- 
+
+    $ cd ./zkSforceSample
     $ pod install
+    
+インストールできたら、zksForceSample.xcworkspaceをダブルクリックして、Xcodeを開いてビルドを実行すればサンプルがプリケーションを使うことができます。
 
 ##Terrasky Blog
 
