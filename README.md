@@ -3,7 +3,7 @@ zkSforceSample
 
 terrasky blog用に作ったzkSforceのログインのサンプルです。
 
-##インストール
+##本サンプルのインストール
 
 ※事前に[cocoapods](http://cocoapods.org/)がインストールされている想定です。
 
