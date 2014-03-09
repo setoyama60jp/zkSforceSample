@@ -58,7 +58,7 @@ static ZKSforceClient* g_sforce=nil;
         
         if ([result sessionId] != nil) {
             //sessionIDが返って来ている場合は、画面遷移
-            _sessionId = [result sessionId];
+            _sessionId = result.sessionId;
             [self performSegueWithIdentifier:@"loginSucceed" sender:self];
         }
     }
